@@ -6,27 +6,30 @@ document.addEventListener('DOMContentLoaded', function() {
       var username = document.getElementById('username').value;
       var password = document.getElementById('password').value;
 
-      // Check if username is empty
+
       if (username.trim() === '') {
           alert('Please enter your username');
-          return; // Exit function if username is empty
+          return; 
       }
 
-      // Check if password is empty
+
       if (password.trim() === '') {
           alert('Please enter your password');
-          return; // Exit function if password is empty
+          return; 
+      }
+      var correctUsername = "mariel"; // Change this to your correct password
+      if (password !== correctUsername) {
+          alert('Incorrect username. Please try again.');
+          return; 
       }
 
       // Validate the password (you can replace this with your actual validation logic)
       var correctPassword = "mjma"; // Change this to your correct password
       if (password !== correctPassword) {
           alert('Incorrect password. Please try again.');
-          return; // Exit function if password is incorrect
+          return; 
       }
-
-      // Proceed with login process (e.g., send a request to your server)
-      // For demonstration purposes, let's just display an alert
+      
       alert('Logging in with username: ' + username + ' and password: ' + password);
   });
 });
