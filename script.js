@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
           return; 
       }
       var correctUsername = "mariel"; // Change this to your correct password
-      if (password !== correctUsername) {
+      if (username !== correctUsername) {
           alert('Incorrect username. Please try again.');
           return; 
       }
